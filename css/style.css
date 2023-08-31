@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Genea, Verdana, sans-serif;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(141, 223, 255, 1);
+    color: rgba(0,0,0,1);
+}
+
+/* Navbar */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(141, 223, 255, 1);
+    padding: 16px 24px;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0 24px 0 24px;
+}
+
+header nav ul li a {
+    color: rgba(0, 100, 255, 1);
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: 700;
+    width: 20px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: rgb(230, 115, 8);
+}
+
+input {
+    padding-right: 200px;
+}
+
+textarea {
+    padding-right: 150px;
+}
+
+/* Class */
+
+.bg-sekolah {
+    width: 100%;
+    height: 578px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+img{
+    transition: left 1s ease;
+}
+
+input {
+    width: 100px;
+}
+
+input[type="submit"] {
+    width: 16px;
+}
+
+input[type="radio"] {
+    width: 16px;
+}
+
+.explaination {
+    margin: 56px 48px 0 48px;
+    text-align: left;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff ;
+    width: auto;
+    height: 578px;
+    position: relative;
+}
+
+.welcome h1 {
+    padding-top: 56px;
+}
+
+.visi-misi {
+    margin-top: 24px;
+}
+
+.our-facilitation {
+    height: 400px;
+    margin: auto;
+    align-content: center;
+}
+
+.our-facilitation h1 {
+    padding: 32px 0 0 0;
+    text-align: center;
+}
+
+.our-facilitation .items-container {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.our-facilitation .items-container .items {
+    display: table-column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.our-facilitation .items-container .items img {
+    border-radius: 100%;
+    border: 2px solid rgba(0, 100, 255, 1); 
+}
+
+.main-container {
+    margin: 0;
+    background-color: #FAF3F0;
+}
+
+.message-us {
+    background-color: rgba(0, 100, 255, 1);
+    color: #fff;
+}
+
+.message-us h1{
+    padding: 32px 0 32px 0;
+    text-align: center;
+}
+
+.message-form {
+    height: 240px;
+    display: flex;
+    padding: 0 24px 0 24px;
+}
+
+.message-form .form {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolom dengan lebar yang sama */
+    grid-gap: 10px;
+    margin-bottom: 24px;
+}
+
+.misi {
+    margin-left: 20px;
+}
+
+/* media query */
+@media (max-width: 700px){
+    header nav {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    header nav ul li {
+        text-align: center;
+        padding: 0;
+    }
+
+    header nav ul li a{
+        padding: 0;
+    }
+
+    .explaination{
+        margin-top: 16px;
+    }
+
+    .explaination .visi-misi h2 {
+        text-align: center;
+    }
+
+    .visi-misi{
+        height: auto;
+        padding: 0 0 16px 0;
+    }
+
+    .welcome {
+        height: auto;
+    }
+
+    .bg-sekolah {
+        height: 600px;
+    }
+
+    .our-facilitation {
+        height: auto;
+        margin-bottom: 24px;
+    }
+    
+    .our-facilitation .items-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message-form {
+        display: block;
+        height: auto;
+        padding-bottom: 24px;
+    }
+
+    .message-us h1{
+        text-align: center;
+    }
+}
